@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="slider.css">
-        <title>Werkzeugkiste</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="slider">
-                <input
-                    id="size"
-                    name="size"
-                    type="range"
-                    min="0"
-                    max="200"
-                    value="0"
-                    oninput="handleChange(event)"
-                    />
-                <output id="output"></output>
-                <div id="bar" class="bar"></div>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="cardWithGradientBackground.css">
+    <title>Werkzeugkiste</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <input
+          id="size"
+          name="size"
+          type="range"
+          min="0"
+          max="200"
+          value="0"
+          oninput="handleChange(event)"
+          />
+        <output id="output"></output>
+        <div id="bar" class="bar"></div>
+      </div>
+      <div class="container__card">
+        <div class="card">
+          <p class="card__text">Hallo</p>
         </div>
-        <script src="slider.js"></script>
-    </body>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+  </body>
 </html>
